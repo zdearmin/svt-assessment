@@ -4,6 +4,10 @@ async function start() {
     data = await response.json();
   
     displayRobots();
+
+    document.querySelectorAll("#robotTable thead tr th").forEach((r) => {
+        r.addEventListener("click", sort);
+      });
 }
   
 function displayRobots() {
@@ -15,14 +19,40 @@ function displayRobots() {
       const robotX = data[i].x;
       const robotY = data[i].y;
   
-      result += `<tr>
-                    <td>${robotId}</td>
-                    <td>${robotBatLevel} %</td>
-                    <td>${robotX}</td>
-                    <td>${robotY}</td>
-                  </tr>`;
+        result += 
+        `<tr>
+        <td>${robotId}</td>
+        <td>${robotBatLevel} %</td>
+        <td>${robotX}</td>
+        <td>${robotY}</td>
+        </tr>`;
     }
     table.innerHTML = result;
+}
+
+var data, table, column;
+let sortAsc = false;
+
+function sort(num) {
+    let thisSort = num.target.dataset.sort;
+  
+    if (column === thisSort) {
+      sortAsc = !sortAsc;
+    } else {
+      column = thisSort;
+    }
+  
+    data.sort((a, b) => {
+      if (a[column] < b[column]) {
+        return sortAsc ? 1 : -1;
+      } else {
+        if (a[column] > b[column]) {
+          return sortAsc ? -1 : 1;
+        }
+      }
+      return 0;
+    });
+    displayRobots();
 }
   
 start()
