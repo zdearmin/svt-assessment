@@ -4,7 +4,7 @@
 
 <!-- ABOUT -->
 ## About
-This html app was developed in [HTML](https://html.com/), [CSS](https://www.w3.org/Style/CSS/Overview.en.html), and [JavaScript](https://www.javascript.com/) utilizing mostly [Bootstrap](https://getbootstrap.com/) for styling. The main function fetches JSON data from an API and displays it in table format.
+This html app was developed in [HTML](https://html.com/), [CSS](https://www.w3.org/Style/CSS/Overview.en.html), and [JavaScript](https://www.javascript.com/), utilizing mostly [Bootstrap](https://getbootstrap.com/) for styling. The main function fetches JSON data from an API and displays it in table format.
 
 Developed by [Zach Dearmin](https://github.com/zdearmin)
 
