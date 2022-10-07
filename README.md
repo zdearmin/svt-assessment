@@ -37,6 +37,8 @@ Clicking on the table header for each column will sort the data in ascending or 
 
 <!-- Future Improvements -->
 ## Future Improvements
+- Add the function to filter by robotId and fix the current sort with robotId. Due to the values being strings and not integers, the code currently reads the first character and sorts accordingly. Causing the sort not to be truly in ascending or descending numerical order
+
 - Set up a grid layout that will plot the robots coordinates to see where they all are relative to the building and each other.
 
 - With the grid layout above, also add another table that can quantitatively keep track of the distance of the robots from each other and other key locations in a building.

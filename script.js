@@ -9,7 +9,7 @@ async function start() {
         r.addEventListener("click", sort);
       });
 }
-  
+
 function displayRobots() {
     let result = "";
   
