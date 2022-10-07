@@ -12,10 +12,23 @@ Developed by [Zach Dearmin](https://github.com/zdearmin)
 
 <!-- USAGE -->
 ## Usage
+This app can be viewed a few different ways:
+- Click and follow this [link](http://www.zachdearmin.com/svt-assessment/)
+
+- Via the deployment page on [GitHub](https://github.com/zdearmin/svt-assessment/deployments/activity_log?environment=github-pages)
+
+- Clone the repository to your local device, and from there you can drag and drop the .html file into your web browser. The HTTPS to clone the repo is below:
+```
+https://github.com/zdearmin/svt-assessment.git
+```
+
 Opening the HTML app will display a table of robots with each row containing a robot that includes: 
 - Robot Id
+
 - Battery Level
+
 - X-Coordinate
+
 - Y-Coordinate
 
 Clicking on the table header for each column will sort the data in ascending or decending order. Each click will toggle to the opposite order.
@@ -32,7 +45,7 @@ Clicking on the table header for each column will sort the data in ascending or 
 
 </br>
 
-<!-- RESOURCES -->
+<!-- Conclusion -->
 ## Conclusion
 Thank you for the opportunity to participate in this assessment. I continually learn more about development with each challenge I take on. 
 
