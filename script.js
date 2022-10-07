@@ -31,23 +31,23 @@ function displayRobots() {
 }
 
 var data, table, column;
-let sortAsc = false;
+let asc = false;
 
 function sort(num) {
-    let thisSort = num.target.dataset.sort;
+    let currentSort = num.target.dataset.sort;
   
-    if (column === thisSort) {
-      sortAsc = !sortAsc;
+    if (column === currentSort) {
+      asc = !asc;
     } else {
-      column = thisSort;
+      column = currentSort;
     }
   
     data.sort((a, b) => {
       if (a[column] < b[column]) {
-        return sortAsc ? 1 : -1;
+        return asc ? 1 : -1;
       } else {
         if (a[column] > b[column]) {
-          return sortAsc ? -1 : 1;
+          return asc ? -1 : 1;
         }
       }
       return 0;
